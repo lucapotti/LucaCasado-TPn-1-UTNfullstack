@@ -1,0 +1,91 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.body {
+    background: antiquewhite;
+    color: black;
+}
+
+.container-heading {
+    padding-top: 80px;
+    display: grid;
+    grid-area: header;
+    justify-content: space-around;
+    background-color: burlywood;
+    color: azure;
+    height: 20%;
+}
+h3 {
+    margin-top: 20px;
+}
+.logo {
+    display: grid;
+    justify-content: end;
+    height: 50%;
+    width: auto;
+    border-radius: 20px;
+   margin: 2px 0px;
+}
+.contenedor-pagina {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 48px 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-areas:
+    'article article';
+    align-self: baseline;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.texto {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: azure;
+    border-radius: 20px;
+    margin: 48px 0px;
+    font-size: medium;
+}
+footer {
+    width: auto;
+    height: auto;
+    background-size: cover;
+    padding: 20px 15px;
+}
+footer nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+footer nav ul {
+    width: 30%;
+}
+footer nav ul li a {
+    display: grid;
+    justify-content: center;
+    background-color:orange;
+    color: azure;
+    padding: 5px 16px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all .5s;
+}
+footer nav ul li a:hover {
+    background-color:azure;
+    color:orangered;
+    transition: all .5s;
+}
